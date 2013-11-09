@@ -29,6 +29,7 @@ img.img-circle:hover {
 
 .jumbotron {
   margin-top:80px;
+  padding:70px 0;
 }
 
 .jumbotron h1 {
@@ -55,11 +56,17 @@ img.img-circle:hover {
 
 #competences {
   border-top: 1px solid #eee;
-  padding-top:30px;
+  padding:70px 0;
 }
-
+#experiences {
+  padding:70px 0;
+}
 #experiences .row {
   margin-left:40px;
+}
+
+#formations {
+  padding:40px 0;
 }
 
 #formations img {
