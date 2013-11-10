@@ -131,6 +131,108 @@
 				    </section>
 				    
 				    <section>
+				        <h3>Rappels</h3>
+				        <pre><code>
+&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Titre de ma page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Hello world !
+  &lt;/body&gt;
+&lt;/html&gt;
+				        </code></pre>
+				    </section>
+				    
+				    <section>
+				        <h3>Exemples de balises</h3>
+				        <pre><code>
+&lt;p&gt; &lt;/p&gt;
+&lt;div&gt; &lt;/div&gt;
+&lt;span&gt; &lt;/span&gt;
+&lt;br /&gt;
+&lt;img src="url de l'image" /&gt;
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+				        </code></pre>
+				    </section>
+				    
+				    <section>
+				        <h3>HTML 5: Les nouvelles balises</h3>
+				        <h4>Balises structurantes</h4>
+				        <ul>
+				            <li>&lt;header&gt;</li>
+				            <li>&lt;nav&gt;</li>
+				            <li>&lt;section&gt;</li>
+				            <li>&lt;article&gt;</li>
+				            <li>&lt;aside&gt;</li>
+				            <li>&lt;footer&gt;</li>
+				        </ul>
+				    </section>
+				    <section>
+				        <h3>HTML 5: Les nouvelles balises</h3>
+				        <h4>Des balises pour les applications</h4>
+            <pre class="prettyprint"><span class="tag">&lt;input</span><span class="pln"> </span><b><span class="atn">list</span></b><span class="pun">=</span><span class="atv">"cars"</span><span class="tag">/&gt;</span><span class="pln"><br></span><span class="tag">&lt;</span><b><span class="tag">datalist</span></b><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cars"</span><span class="tag">&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"BMW"</span><span class="tag">/&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Ford"</span><span class="tag">/&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;option</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Volvo"</span><span class="tag">/&gt;</span><span class="pln"><br></span><span class="tag">&lt;/</span><b><span class="tag">datalist</span></b><span class="tag">&gt;</span><span class="pln"><br></span><input id="cars-input" placeholder="You should see an autocomplete menu as you type" list="cars"><span class="pln"><br></span><datalist id="cars"><span class="pln"><br>&nbsp; </span><option value="BMW"><span class="pln"><br>&nbsp; </span></option><option value="Ford"><span class="pln"><br>&nbsp; </span></option><option value="Volvo"><span class="pln"><br></span></option></datalist><span class="pln"><br></span><br></span><span class="tag">&lt;</span><b><span class="tag">details</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;</span><b><span class="tag">summary</span></b><span class="tag">&gt;</span><span class="pln">HTML 5</span><span class="tag">&lt;/</span><b><span class="tag">summary</span></b><span class="tag">&gt;</span><span class="pln"><br>&nbsp; This slide deck teaches you everything you need to know about HTML 5.<br></span><span class="tag">&lt;</span><b><span class="tag">/details</span></b><span class="tag">&gt;</span><span class="pln"><br></span><details><summary><span class="pln">HTML 5</span></summary><span class="pln">This slide deck teaches you everything you need to know about HTML 5.</span></details></pre>
+
+<pre class="prettyprint"><span class="tag">&lt;</span><b><span class="tag">meter</span></b><span class="pln"> </span><b><span class="atn">min</span></b><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"100"</span><span class="pln"> </span><b><span class="atn">low</span></b><span class="pun">=</span><span class="atv">"40"</span><span class="pln"> </span><b><span class="atn">high</span></b><span class="pun">=</span><span class="atv">"90"</span><span class="pln"> </span><b><span class="atn">optimum</span></b><span class="pun">=</span><span class="atv">"100"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"91"</span><span class="tag">&gt;</span><span class="pln">A+</span><span class="tag">&lt;/</span><b><span class="tag">meter</span></b><span class="tag">&gt;</span><span class="pln"><br>Your score is: </span><meter value="91" min="0" max="100" low="40" high="90" optimum="100"><span class="pln">A+</span></meter><span class="pln"><br><br></span><span class="tag">&lt;</span><b><span class="tag">progress</span></b><span class="tag">&gt;</span><span class="pln">working...</span><span class="tag">&lt;/</span><b><span class="tag">progress</span></b><span class="tag">&gt;</span><span class="pln"><br>Download is: </span><progress><span class="pln">working...</span></progress><span class="pln"><br><br></span><span class="tag">&lt;</span><b><span class="tag">progress</span></b><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"75"</span><span class="pln"> </span><b><span class="atn">max</span></b><span class="pun">=</span><span class="atv">"100"</span><span class="tag">&gt;</span><span class="pln">3/4 complete</span><span class="tag">&lt;/</span><b><span class="tag">progress</span></b><span class="tag">&gt;</span><span class="pln"><br>Goal is: </span><progress value="75" max="100"><span class="pln">3/4 complete</span></progress></pre>
+
+                    </section>
+                    <section>
+				        <h3>HTML 5: Les nouvelles balises</h3>
+				        <h4>Relations sur les liens</h4>
+				        <pre><code>
+<link rel="alternate" type="application/rss+xml" href="http://myblog.com/feed"/>
+<link rel="icon" href="/favicon.ico"/>
+<link rel="pingback" href="http://myblog.com/xmlrpc.php"/>
+<link rel="prefetch" href="http://myblog.com/main.php"/>
+...
+
+<a rel="archives" href="http://myblog.com/archives">old posts</a>
+<a rel="external" href="http://notmysite.com">tutorial</a>
+<a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0">license</a>
+<a rel="nofollow" href="http://notmysite.com/sample">wannabe</a>
+<a rel="tag" href="http://myblog.com/category/games">games posts</a>
+...
+                    </pre></code>
+                    </section>
+                    
+                    <section>
+                        <h3>HTML5 : Les formulaires</h3>
+                        <p>De nombreuses nouveautés...</p>
+                        <pre><code>
+<input type="text" required />
+<input type="email" value="some@email.com" />
+<input type="date" min="2010-08-14" max="2011-08-14" value="2010-08-14"/>
+<input type="range" min="0" max="50" value="10" />
+<input type="color" placeholder="e.g. #bbbbbb" />
+<input type="tel"  placeholder="(555) 555-5555" pattern="^\(?\d{3}\)?[-\s]\d{3}[-\s]\d{4}.*?$" />
+                        </pre></code>
+                    </section>
+                    
+				</section>
+				
+				
+				<section>
+				    <section>
+				        <h1>Le CSS</h1>
+				        <p>Mais qu'est ce que c'est ?</p>
+				    </section>
+				    
+				    <section>
+				    </section>
+				</section>
+				
+				<section>
+				    <section>
+				        <h1>Et plus encore !</h1>
+				        <p></p>
+				    </section>
+				    
+				    <section>
 				    </section>
 				</section>
 
