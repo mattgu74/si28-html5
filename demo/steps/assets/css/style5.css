@@ -17,20 +17,9 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-h2, h3 {
-  font-size: 24px;
-}
-
 .container {
   width:1170px;
   margin:auto;
-}
-
-.featurette-divider {
-  width:100%;
-  height:1px;
-  background-color:#EEE;
-  border:none;
 }
 
 /* NAV */
@@ -92,36 +81,15 @@ header p {
   overflow:hidden;
 }
 
-.col-lg-4 {
-  width:390px;
-  float:left;
-  text-align: center;
-}
-
 .col-lg-2 {
   float:left;
   width:200px;
 }
 
-img.img-circle {
-  width:140px;
-  height:140px;
-  box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  -webkit-border-radius:70px;
-  -moz-border-radius:70px;
-  border-radius:70px;
-}
-
-img.img-circle:hover {
-  border:10px solid #64ebff;
-}
-
-.featurette h2 {
-  font-size:38px;
-  color:#4d4c4c;
-  margin:20px 0;
+.col-lg-4 {
+  width:390px;
+  float:left;
+  text-align: center;
 }
 
 /* Compétences */
@@ -130,6 +98,18 @@ img.img-circle:hover {
   margin-top:30px;
   border-top: 1px solid #eee;
   padding:30px 0;
+}
+
+img.img-circle {
+  width:140px;
+  height:140px;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+
+img.img-circle:hover {
+  border:10px solid #64ebff;
 }
 
 /* Expériences */
@@ -162,57 +142,8 @@ img.img-circle:hover {
 
 /* Formations */
 
-#formations {
-  padding:30px 0;
-}
-
-#formations img {
-  margin:auto;
-  width:300px;
-  transition: transform 0.8s ease-in;
-  -webkit-transition: -webkit-transform 0.8s ease-in; /* Safari and Chrome */
-  -moz-transition: -moz-transform 0.8s ease-in; /* Safari and Chrome */
-}
-
-#formations img:hover {
-  margin:auto;
-  width:300px;
-  -webkit-transform: scale(0.90);
-  -moz-transform: scale(0.90);
-  transform: scale(0.90);
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  filter: blur(5px);
-}
-
 #formations h3 {
   font-family: Georgia, Arial, sans-serif;
   font-style: italic;
   text-transform: none;
-}
-
-/* FOOTER */
-
-footer {
-  position:relative;
-  width:100%;
-  min-height:50px;
-  background:#000;
-  margin-bottom:0;
-}
-
-footer p {
-  color:#FFF;
-  line-height: 50px;
-  margin:0 20px;
-}
-
-footer a {
-  float:right;
-  color:#64ebff;
-}
-
-footer a:hover {
-  color:#FFF;
-  text-decoration: none;
 }
