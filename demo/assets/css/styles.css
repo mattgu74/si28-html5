@@ -1,6 +1,11 @@
 html, body {
+  margin:0;
+  padding:0;
   height:100%;
+  font-family: Helvetica, Arial, sans-serif;
 }
+
+/* STYLES GENERAUX */
 
 p {
   font-family: Georgia, Arial, sans-serif;
@@ -16,57 +21,149 @@ h2, h3 {
   font-size: 24px;
 }
 
+.container {
+  width:1170px;
+  margin:auto;
+}
+
+.featurette-divider {
+  width:100%;
+  height:1px;
+  background-color:#EEE;
+  border:none;
+}
+
+/* NAV */
+
+nav {
+  width:100%;
+  background-color:#000000;
+  overflow:hidden;
+  font-size:14px;
+}
+
+nav ul li {
+  display:inline-block;
+}
+
+nav ul li a, nav a.navbar-brand {
+  color:#999;
+  text-decoration:none;
+  padding:15px;
+}
+
+nav ul li a:hover, nav a.navbar-brand:hover {
+  color:#FFF;
+}
+
+nav a.navbar-brand {
+  float:left;
+  font-size:18px;
+  line-height: 14px;
+  padding:0 15px;
+}
+
+/* Contenu Général */
+/* TITRE */
+
+header {
+  margin-top:30px;
+  padding:70px 0;
+  background-color:#EEE;
+  padding:50px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+
+header h1 {
+  font-size:58px;
+  margin:10px 0;
+
+}
+
+header p {
+  font-size:43px;
+  margin:10px 0;
+}
+
+/* Structure */
+.row {
+  overflow:hidden;
+}
+
+.col-lg-4 {
+  width:390px;
+  float:left;
+  text-align: center;
+}
+
+.col-lg-2 {
+  float:left;
+  width:200px;
+}
+
 img.img-circle {
   width:140px;
   height:140px;
-
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-border-radius:70px;
+  -moz-border-radius:70px;
+  border-radius:70px;
 }
 
 img.img-circle:hover {
   border:10px solid #64ebff;
-  
-}
-
-.jumbotron {
-  margin-top:80px;
-  padding:70px 0;
-}
-
-.jumbotron h1 {
-  font-size:58px;
-}
-
-.jumbotron p {
-  font-size:43px;
-}
-
-.col-lg-4 {
-  text-align: center;
 }
 
 .featurette h2 {
   font-size:38px;
   color:#4d4c4c;
-  margin-bottom:40px;
-}
-
-.featurette .row {
   margin:20px 0;
 }
 
+/* Compétences */
+
 #competences {
+  margin-top:30px;
   border-top: 1px solid #eee;
-  padding:70px 0;
-}
-#experiences {
-  padding:70px 0;
-}
-#experiences .row {
-  margin-left:40px;
+  padding:30px 0;
 }
 
+/* Expériences */
+
+#experiences {
+  padding:30px 0;
+}
+
+#experiences .row {
+  margin:10px 0 10px 40px;
+}
+
+#experiences .featurette-heading {
+  margin-bottom:10px;
+}
+
+#experiences p {
+  margin:20px 0;
+  font-size:14px;
+}
+
+#experiences p.lead {
+  margin:10px 0;
+  font-size:21px;
+}
+
+#experiences img {
+  width:160px;
+}
+
+/* Formations */
+
 #formations {
-  padding:40px 0;
+  padding:30px 0;
 }
 
 #formations img {
@@ -94,6 +191,8 @@ img.img-circle:hover {
   text-transform: none;
 }
 
+/* FOOTER */
+
 footer {
   position:relative;
   width:100%;
@@ -109,6 +208,7 @@ footer p {
 }
 
 footer a {
+  float:right;
   color:#64ebff;
 }
 

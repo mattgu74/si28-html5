@@ -5,43 +5,27 @@
 
     <title>Portfolio de Juliette LIMA</title>
 
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/styles-bootstrap.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
 
   </head>
   <body>
-    <div class="navbar-wrapper">
+    <nav id="navbar">
       <div class="container">
-
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">Mon Portfolio</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#experiences">Expériences professionnelles</a></li>
-                <li><a href="#formations">Formations</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+        <a class="navbar-brand" href="#">Mon Portfolio</a>
+        <ul class="nav">
+          <li><a href="#">Présentation</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#experiences">Expériences professionnelles</a></li>
+          <li><a href="#formations">Formations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
 
     <div class="container">
-
       <header class="row">
-        <div class="col-lg-12">
-          <div class=" jumbotron">
-            <h1>Portfolio de Juliette LIMA</h1>
-            <p>Front-End développeur</p>
-          </div>
-        </div>
+        <h1>Portfolio de Juliette LIMA</h1>
+        <p>Front-End développeur</p>
       </header>
 
       <div class="row" id="competences">
@@ -73,7 +57,7 @@
         <h2>Expériences professionnelles</h2>
         <div class="row">
           <div class="col-lg-2">
-            <img class="featurette-image img-responsive" src="assets/img/somo.png" alt="Somo Global" />
+            <img src="assets/img/somo.png" alt="Somo Global" />
           </div>
           <div class="col-lg-9">
             <h3 class="featurette-heading">Somo Global - London</h3>
@@ -83,7 +67,7 @@
         </div>
         <div class="row">
           <div class="col-lg-2">
-            <img class="featurette-image img-responsive" src="assets/img/hover.png" alt="Hover Studio" />
+            <img src="assets/img/hover.png" alt="Hover Studio" />
           </div>
           <div class="col-lg-9">
             <h3 class="featurette-heading">Hover Studio - London</h3>
@@ -93,7 +77,7 @@
         </div>
         <div class="row">
           <div class="col-lg-2">
-            <img class="featurette-image img-responsive" src="assets/img/moonwalk.png" alt="Moonwalk Films" />
+            <img src="assets/img/moonwalk.png" alt="Moonwalk Films" />
           </div>
           <div class="col-lg-9">
             <h3 class="featurette-heading">Moonwalk Films - Paris</h3>
@@ -108,33 +92,29 @@
       <div class="row featurette" id="formations">
         <h2>Formations</h2>
         <div class="col-lg-4">
-          <img class="featurette-image img-responsive" src="assets/img/utc.png" alt="UTC">
+          <img src="assets/img/utc.png" alt="UTC">
           <h3> Master UxDesign</h3>
           <p>UTC - Compiègne</p>
         </div>
         <div class="col-lg-4">
-          <img class="featurette-image img-responsive" src="assets/img/gobelins.png" alt="Gobelins">
+          <img src="assets/img/gobelins.png" alt="Gobelins">
           <h3>Licence Professionnelle CDNL</h3> 
           <p>Gobelins, école de l'image - Paris</p>
         </div>
         <div class="col-lg-4">
-          <img class="featurette-image img-responsive" src="assets/img/src.png" alt="SRC">
+          <img src="assets/img/src.png" alt="SRC">
           <h3>DUT SRC</h3>
           <p>IUT de Troyes - Troyes</p>
         </div>
       </div>
-
     </div>
 
     <footer id="contact">
       <div class="container">
         <p>Développé par Juliette LIMA
-        <span class="pull-right"><a href="mailto:juliette.lima@utc.etu.fr">Contacter par mail</a></span></p>
+        <a href="mailto:juliette.lima@utc.etu.fr">Contacter par mail</a></p>
       </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/holder.js"></script>
   </body>
 </html>
