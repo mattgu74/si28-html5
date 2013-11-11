@@ -453,8 +453,318 @@ function linkify( selector ) {
 				</section>
 
 				<section>
+				<section>
 					<h2>Atelier Pratique</h2>
-					<p>CONTENU AHAHAH</p>
+					<p>Ouvrez le fichier step0.html</p>
+					</section>
+					<section>
+					<h2>Etape 1 - HTML</h2>
+					<p>Ajouter une feuille de style</p>
+						<pre><code>
+	<link href="assets/css/style1.css" rel="stylesheet">
+                    	</pre></code>
+					</section>
+					<section>
+						<h2>Etape 1 - CSS</h2>
+						<p>Style Général</p>
+						<pre><code>
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	font-family: Helvetica, Arial, sans-serif;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 1 - CSS</h2>
+						<p>Styliser les polices</p>
+						<pre><code>
+p {
+	font-family: Georgia, Arial, sans-serif;
+	font-style: italic;
+}
+
+h1, h2, h3 {
+	font-family: "Arial Black", Arial, sans-serif;
+	text-transform: uppercase;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 1 - CSS</h2>
+						<p>Div principale</p>
+						<pre><code>
+.container {
+	width:1170px;
+	margin:auto;
+}
+						</code></pre>
+					</section>
+					<section>
+					<h2>Etape 1 - HTML</h2>
+					<p>Ajouter un titre</p>
+						<pre><code>
+	<div class="container">
+		<header class="row">
+			<h1>Portfolio de Juliette LIMA</h1>
+			<p>Front-End développeur</p>
+		</header>
+	</div>
+						</code></pre>
+					</section>
+					<section>
+					<h2>Etape 1 - CSS</h2>
+					<p>Styliser un titre</p>
+						<pre><code>
+header {
+  background-color:#EEE;
+  padding:50px;
+}
+
+header h1 {
+  font-size:58px;
+}
+
+header p {
+  font-size:43px;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 2 - HTML</h2>
+						<p>Structure du menu</p>
+						<pre><code>
+<nav id="navbar">
+	<div class="container">
+		<a class="navbar-brand" href="#">Mon Portfolio</a>
+	</div>
+</nav>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 2 - CSS</h2>
+						<p>Style du menu</p>
+						<pre><code>
+nav {
+	width:100%;
+	background-color:#000000;
+	overflow:hidden;
+	font-size:14px;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 2 - HTML</h2>
+						<p>Liens du menu</p>
+						<pre><code>
+<ul class="nav">
+	<li><a href="#">Présentation</a></li>
+	<li><a href="#competences">Compétences</a></li>
+	<li><a href="#experiences">Expériences professionnelles</a></li>
+	<li><a href="#formations">Formations</a></li>
+	<li><a href="#contact">Contact</a></li>
+</ul>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 2 - CSS</h2>
+						<p>Style des liens</p>
+						<pre><code>
+nav ul li {
+	display:inline-block;
+}
+
+nav ul li a, nav a.navbar-brand {
+	color:#999;
+	text-decoration:none;
+	padding:15px;
+}
+
+nav a.navbar-brand {
+	float:left;
+	font-size:18px;
+	line-height: 14px;
+	padding:0 15px;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 2 - CSS</h2>
+						<p>Effet au survol des liens</p>
+						<pre><code>
+nav ul li a:hover, nav a.navbar-brand:hover {
+	color:#FFF;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 3 - HTML</h2>
+						<p>Structure de la partie compétences</p>
+						<pre><code>
+<div class="row" id="competences">
+	<div class="col-lg-4">
+	</div>
+</div>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 3 - CSS</h2>
+						<p>Style de la partie compétences</p>
+						<pre><code>
+.row {
+	overflow:hidden;
+}
+
+.col-lg-4 {
+	width:390px;
+	float:left;
+	text-align: center;
+}
+
+#competences {
+	margin-top:30px;
+	border-top: 1px solid #eee;
+	padding:30px 0;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 3 - HTML</h2>
+						<p>Ajouter une Image</p>
+						<pre><code>
+<div class="row" id="competences">
+	<div class="col-lg-4">
+		<img src="assets/img/developpement.png" alt="Développement">
+	</div>
+</div>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 3 - CSS</h2>
+						<p>Style des images</p>
+						<pre><code>
+img.img-circle {
+	width:140px;
+	height:140px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+img.img-circle:hover {
+	border:10px solid #64ebff;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 3 - HTML</h2>
+						<p>Ajouter une Description</p>
+						<pre><code>
+<div class="row" id="competences">
+	<div class="col-lg-4">
+		<img src="assets/img/developpement.png" alt="Développement">
+		<h2>Développement Web</h2>
+		<p>HTML, CSS, JS, HTML5, CSS3, AS3</p>
+		<p>Notions de PHP, MYSQL, Objective C</p>
+		<p>Utilisation de git</p>
+	</div>
+</div>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 4 - HTML</h2>
+						<p>Titre de partie</p>
+						<pre><code>
+<div class="row featurette" id="experiences">
+	<h2>Expériences professionnelles</h2>
+</div>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 4 - HTML</h2>
+						<p>Structure</p>
+						<pre><code>
+<div class="row">
+	<div class="col-lg-2">
+	</div>
+	<div class="col-lg-9">
+	</div>
+</div>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 4 - CSS</h2>
+						<p>Style de la structure</p>
+						<pre><code>
+#experiences {
+	padding:30px 0;
+}
+
+#experiences .row {
+	margin:10px 0 10px 40px;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 4 - HTML</h2>
+						<p>Ajouter une image</p>
+						<pre><code>
+<div class="col-lg-2">
+	<img src="assets/img/somo.png" alt="Somo Global" />
+</div>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 4 - HTML</h2>
+						<p>Ajouter une description</p>
+						<pre><code>
+
+<div class="col-lg-9">
+	<h3 class="featurette-heading">Somo Global - London</h3>
+	<p class="lead">Front-end Développeuse</p>
+	<p>Participation à différents projets clients 
+	de l'entreprise au sein de l'équipe de production de l'entreprise. 
+	Travail avec différents corps de métiers, 
+	dont des chefs de projet et designers.</p>
+</div>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 5 - HTML</h2>
+						<p>Structure</p>
+						<pre><code>
+
+<div class="row featurette" id="formations">
+	<h2>Formations</h2>
+	<div class="col-lg-4">
+	</div>
+</div>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 5 - HTML</h2>
+						<p>Ajouter une image</p>
+						<pre><code>
+<div class="col-lg-4">
+	<img src="assets/img/utc.png" alt="UTC">
+	<h3> Master UxDesign</h3>
+	<p>UTC - Compiègne</p>
+</div>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 6 - HTML</h2>
+						<p>Ajouter un pied de page</p>
+						<pre><code>
+<footer id="contact">
+	<div class="container">
+		<p>Développé par Juliette LIMA
+		<a href="mailto:juliette.lima@utc.etu.fr">Contacter par mail</a></p>
+	</div>
+</footer>
+						</code></pre>
+					</section>
 				</section>
 
 			</div>
