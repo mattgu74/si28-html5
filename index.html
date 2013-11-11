@@ -697,6 +697,11 @@ img.img-circle:hover {
 						<h2>Etape 4 - CSS</h2>
 						<p>Style de la structure</p>
 						<pre><code>
+.col-lg-2 {
+	float:left;
+	width:200px;
+}
+
 #experiences {
 	padding:30px 0;
 }
@@ -731,6 +736,25 @@ img.img-circle:hover {
 						</code></pre>
 					</section>
 					<section>
+						<h2>Etape 4 - CSS</h2>
+						<p>Style du contenu</p>
+						<pre><code>
+#experiences p {
+	margin:20px 0;
+	font-size:14px;
+}
+
+#experiences p.lead {
+	margin:10px 0;
+	font-size:21px;
+}
+
+#experiences img {
+	width:160px;
+}
+						</code></pre>
+					</section>
+					<section>
 						<h2>Etape 5 - HTML</h2>
 						<p>Structure</p>
 						<pre><code>
@@ -754,6 +778,17 @@ img.img-circle:hover {
 						</code></pre>
 					</section>
 					<section>
+						<h2>Etape 5 - CSS</h2>
+						<p>Style du contenu</p>
+						<pre><code>
+#formations h3 {
+	font-family: Georgia, Arial, sans-serif;
+	font-style: italic;
+	text-transform: none;
+}
+						</code></pre>
+					</section>
+					<section>
 						<h2>Etape 6 - HTML</h2>
 						<p>Ajouter un pied de page</p>
 						<pre><code>
@@ -763,6 +798,71 @@ img.img-circle:hover {
 		<a href="mailto:juliette.lima@utc.etu.fr">Contacter par mail</a></p>
 	</div>
 </footer>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 6 - CSS</h2>
+						<p>Style du pied de page</p>
+						<pre><code>
+footer {
+	position:relative;
+	width:100%;
+	min-height:50px;
+	background:#000;
+	margin-bottom:0;
+}
+
+footer p {
+	color:#FFF;
+	line-height: 50px;
+	margin:0 20px;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 6 - CSS</h2>
+						<p>Style du lien</p>
+						<pre><code>
+footer a {
+	float:right;
+	color:#64ebff;
+}
+
+footer a:hover {
+	color:#FFF;
+	text-decoration: none;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 7 - CSS</h2>
+						<p>Bords arrondis CSS3</p>
+						<pre><code>
+img.img-circle {
+	-webkit-border-radius:70px;
+	-moz-border-radius:70px;
+	border-radius:70px;
+}
+						</code></pre>
+					</section>
+					<section>
+						<h2>Etape 7 - CSS</h2>
+						<p>Animations CSS3</p>
+						<pre><code>
+#formations img {
+	transition: transform 0.8s ease-in;
+	-webkit-transition: -webkit-transform 0.8s ease-in;
+	-moz-transition: -moz-transform 0.8s ease-in;
+}
+
+#formations img:hover {
+	-webkit-transform: scale(0.90);
+	-moz-transform: scale(0.90);
+	transform: scale(0.90);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	filter: blur(5px);
+}
 						</code></pre>
 					</section>
 				</section>
